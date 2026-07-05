@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+  <title id="title">数据库系统三级模式与二级映像示意图</title>
+  <desc id="desc">应用程序通过外模式访问数据库，外模式通过外模式模式映像连接到模式，模式通过内模式模式映像连接到内模式和数据库。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/>
+    </marker>
+    <style>
+      .box {
+        fill: #fff;
+        stroke: #333;
+        stroke-width: 2;
+      }
+
+      .line {
+        fill: none;
+        stroke: #333;
+        stroke-width: 2;
+        stroke-linecap: butt;
+        stroke-linejoin: round;
+      }
+
+      .text {
+        fill: #222;
+        font-family: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", serif;
+        font-size: 25px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+
+      .label {
+        fill: #222;
+        font-family: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", serif;
+        font-size: 24px;
+        dominant-baseline: middle;
+      }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#fff"/>
+
+  <rect class="box" x="60" y="38" width="130" height="55"/>
+  <text class="text" x="125" y="66">应用 A</text>
+  <rect class="box" x="220" y="38" width="130" height="55"/>
+  <text class="text" x="285" y="66">应用 B</text>
+  <rect class="box" x="435" y="38" width="130" height="55"/>
+  <text class="text" x="500" y="66">应用 C</text>
+  <rect class="box" x="625" y="38" width="130" height="55"/>
+  <text class="text" x="690" y="66">应用 D</text>
+  <rect class="box" x="805" y="38" width="130" height="55"/>
+  <text class="text" x="870" y="66">应用 E</text>
+
+  <rect class="box" x="130" y="168" width="150" height="58"/>
+  <text class="text" x="205" y="198">外模式 1</text>
+  <rect class="box" x="425" y="168" width="150" height="58"/>
+  <text class="text" x="500" y="198">外模式 2</text>
+  <rect class="box" x="685" y="168" width="150" height="58"/>
+  <text class="text" x="760" y="198">外模式 3</text>
+
+  <path class="line" d="M 147 98 L 176 163" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path class="line" d="M 258 98 L 227 163" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path class="line" d="M 500 98 L 500 163" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path class="line" d="M 693 98 L 727 163" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path class="line" d="M 846 98 L 794 163" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+
+  <path class="line" d="M 205 226 L 205 275 L 760 275 L 760 226"/>
+  <path class="line" d="M 500 231 L 500 313" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text class="label" x="780" y="262">外模式/模式映像</text>
+
+  <rect class="box" x="440" y="318" width="120" height="58"/>
+  <text class="text" x="500" y="348">模式</text>
+
+  <path class="line" d="M 500 381 L 500 430" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <rect class="box" x="430" y="435" width="140" height="58"/>
+  <text class="text" x="500" y="465">内模式</text>
+  <text class="label" x="630" y="411">内模式/模式映像</text>
+
+  <path class="line" d="M 500 498 L 500 526" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path class="box" d="M 420 546 C 420 532 580 532 580 546 L 580 590 C 580 604 420 604 420 590 Z"/>
+  <path class="line" d="M 420 546 C 420 560 580 560 580 546"/>
+  <text class="text" x="500" y="574">数据库</text>
+</svg>

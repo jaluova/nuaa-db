@@ -1,0 +1,257 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 920" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="13">
+
+  <!-- ==================== 实体：供货商（左上） ==================== -->
+  <rect x="40" y="60" width="110" height="50" rx="0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="95" y="90" text-anchor="middle" font-weight="bold" font-size="15">供货商</text>
+
+  <!-- 供货商属性 -->
+  <ellipse cx="15" cy="25" rx="36" ry="16" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.8"/>
+  <text x="15" y="29" text-anchor="middle" font-size="11">供货商号</text>
+  <line x1="15" y1="12" x2="30" y2="10" stroke="#7C3AED" stroke-width="1.3"/>
+  <line x1="35" y1="36" x2="65" y2="55" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="95" cy="20" rx="28" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="95" y="24" text-anchor="middle" font-size="11">名称</text>
+  <line x1="95" y1="35" x2="95" y2="60" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="165" cy="35" rx="32" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="165" y="39" text-anchor="middle" font-size="11">联系人</text>
+  <line x1="148" y1="45" x2="130" y2="55" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="170" cy="70" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="170" y="74" text-anchor="middle" font-size="11">联系电话</text>
+  <line x1="155" y1="75" x2="148" y2="75" stroke="#333" stroke-width="1.2"/>
+
+  <!-- ==================== 实体：药品（中上） ==================== -->
+  <rect x="270" y="60" width="100" height="50" rx="0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="320" y="90" text-anchor="middle" font-weight="bold" font-size="15">药品</text>
+
+  <ellipse cx="260" cy="25" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.8"/>
+  <text x="260" y="29" text-anchor="middle" font-size="11">商品号</text>
+  <line x1="260" y1="13" x2="275" y2="11" stroke="#7C3AED" stroke-width="1.3"/>
+  <line x1="280" y1="36" x2="295" y2="55" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="340" cy="20" rx="28" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="340" y="24" text-anchor="middle" font-size="11">名称</text>
+  <line x1="340" y1="35" x2="335" y2="60" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="410" cy="40" rx="28" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="410" y="44" text-anchor="middle" font-size="11">单价</text>
+  <line x1="395" y1="50" x2="365" y2="65" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="410" cy="75" rx="28" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="410" y="79" text-anchor="middle" font-size="11">类别</text>
+  <line x1="390" y1="80" x2="370" y2="82" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="340" cy="120" rx="28" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="340" y="124" text-anchor="middle" font-size="11">单位</text>
+  <line x1="333" y1="105" x2="325" y2="100" stroke="#333" stroke-width="1.2"/>
+
+  <!-- ==================== 实体：批次（右） ==================== -->
+  <rect x="500" y="60" width="100" height="50" rx="0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="550" y="90" text-anchor="middle" font-weight="bold" font-size="15">批次</text>
+
+  <ellipse cx="490" cy="20" rx="32" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.8"/>
+  <text x="490" y="24" text-anchor="middle" font-size="11">批次号</text>
+  <line x1="490" y1="8" x2="505" y2="6" stroke="#7C3AED" stroke-width="1.3"/>
+  <line x1="510" y1="30" x2="525" y2="55" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="610" cy="35" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="610" y="39" text-anchor="middle" font-size="11">生产日期</text>
+  <line x1="590" y1="45" x2="580" y2="55" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="610" cy="75" rx="32" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="610" y="79" text-anchor="middle" font-size="11">有效期</text>
+  <line x1="590" y1="80" x2="595" y2="78" stroke="#333" stroke-width="1.2"/>
+
+  <!-- ==================== 联系1：供应 (供货商-药品，M:N) ==================== -->
+  <polygon points="190,150 240,170 190,190 140,170" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+  <text x="190" y="175" text-anchor="middle" font-size="12">供应</text>
+
+  <line x1="110" y1="110" x2="158" y2="156" stroke="#333" stroke-width="1.5"/>
+  <text x="118" y="135" font-size="12" font-weight="bold" fill="#DC2626">M</text>
+
+  <line x1="295" y1="110" x2="238" y2="158" stroke="#333" stroke-width="1.5"/>
+  <text x="275" y="135" font-size="12" font-weight="bold" fill="#DC2626">N</text>
+
+  <!-- 供应属性 -->
+  <ellipse cx="130" cy="200" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="130" y="204" text-anchor="middle" font-size="11">供货价格</text>
+  <line x1="148" y1="192" x2="170" y2="182" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="250" cy="200" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="250" y="204" text-anchor="middle" font-size="11">供货日期</text>
+  <line x1="230" y1="192" x2="210" y2="182" stroke="#333" stroke-width="1.2"/>
+
+  <!-- ==================== 联系2：药品-批次 (1:N) ==================== -->
+  <polygon points="410,150 450,168 410,186 370,168" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+  <text x="410" y="173" text-anchor="middle" font-size="12">属于</text>
+
+  <line x1="340" y1="110" x2="380" y2="156" stroke="#333" stroke-width="1.5"/>
+  <text x="345" y="135" font-size="12" font-weight="bold" fill="#DC2626">1</text>
+
+  <line x1="530" y1="110" x2="450" y2="157" stroke="#333" stroke-width="1.5"/>
+  <text x="500" y="133" font-size="12" font-weight="bold" fill="#DC2626">N</text>
+
+  <!-- ==================== 实体：销售网点（中左） ==================== -->
+  <rect x="50" y="280" width="120" height="50" rx="0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="110" y="310" text-anchor="middle" font-weight="bold" font-size="15">销售网点</text>
+
+  <ellipse cx="30" cy="245" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.8"/>
+  <text x="30" y="249" text-anchor="middle" font-size="11">网点号</text>
+  <line x1="30" y1="233" x2="45" y2="231" stroke="#7C3AED" stroke-width="1.3"/>
+  <line x1="50" y1="255" x2="80" y2="275" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="110" cy="240" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="110" y="244" text-anchor="middle" font-size="11">网点名称</text>
+  <line x1="110" y1="255" x2="110" y2="280" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="190" cy="270" rx="28" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="190" y="274" text-anchor="middle" font-size="11">地址</text>
+  <line x1="175" y1="280" x2="165" y2="290" stroke="#333" stroke-width="1.2"/>
+
+  <!-- ==================== 实体：库位（中） ==================== -->
+  <rect x="270" y="280" width="100" height="50" rx="0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="320" y="310" text-anchor="middle" font-weight="bold" font-size="15">库位</text>
+
+  <ellipse cx="250" cy="245" rx="32" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.8"/>
+  <text x="250" y="249" text-anchor="middle" font-size="11">库位号</text>
+  <line x1="250" y1="233" x2="263" y2="231" stroke="#7C3AED" stroke-width="1.3"/>
+  <line x1="270" y1="255" x2="295" y2="275" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="390" cy="270" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="390" y="274" text-anchor="middle" font-size="11">库位类型</text>
+  <line x1="368" y1="278" x2="360" y2="285" stroke="#333" stroke-width="1.2"/>
+
+  <!-- ==================== 联系3：网点-库位 (1:N) ==================== -->
+  <polygon points="180,320 215,338 180,356 145,338" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+  <text x="180" y="343" text-anchor="middle" font-size="11">包含</text>
+
+  <line x1="155" y1="330" x2="155" y2="335" stroke="#333" stroke-width="1.5"/>
+  <text x="148" y="335" font-size="11" font-weight="bold" fill="#DC2626">1</text>
+
+  <line x1="270" y1="305" x2="215" y2="338" stroke="#333" stroke-width="1.5"/>
+  <text x="250" y="315" font-size="11" font-weight="bold" fill="#DC2626">N</text>
+
+  <!-- ==================== 联系4：入库 (药品-批次-库位，三元 M:N:P) ==================== -->
+  <polygon points="370,400 440,425 370,450 300,425" fill="#D1FAE5" stroke="#10B981" stroke-width="2.5"/>
+  <text x="370" y="430" text-anchor="middle" font-weight="bold" font-size="13">入库</text>
+
+  <!-- 药品 → 入库 (M) -->
+  <line x1="320" y1="110" x2="355" y2="405" stroke="#333" stroke-width="1.5"/>
+  <text x="318" y="260" font-size="12" font-weight="bold" fill="#DC2626">M</text>
+
+  <!-- 批次 → 入库 (N) -->
+  <line x1="540" y1="110" x2="435" y2="410" stroke="#333" stroke-width="1.5"/>
+  <text x="510" y="260" font-size="12" font-weight="bold" fill="#DC2626">N</text>
+
+  <!-- 库位 → 入库 (P) -->
+  <line x1="330" y1="330" x2="345" y2="412" stroke="#333" stroke-width="1.5"/>
+  <text x="338" y="375" font-size="12" font-weight="bold" fill="#DC2626">P</text>
+
+  <!-- 入库属性 -->
+  <ellipse cx="300" cy="465" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="300" y="469" text-anchor="middle" font-size="11">入库数量</text>
+  <line x1="320" y1="455" x2="350" y2="443" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="450" cy="465" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="450" y="469" text-anchor="middle" font-size="11">入库日期</text>
+  <line x1="430" y1="455" x2="405" y2="443" stroke="#333" stroke-width="1.2"/>
+
+  <!-- ==================== 实体：客户（右下） ==================== -->
+  <rect x="580" y="280" width="100" height="50" rx="0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="630" y="310" text-anchor="middle" font-weight="bold" font-size="15">客户</text>
+
+  <ellipse cx="580" cy="240" rx="32" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.8"/>
+  <text x="580" y="244" text-anchor="middle" font-size="11">客户号</text>
+  <line x1="580" y1="228" x2="593" y2="226" stroke="#7C3AED" stroke-width="1.3"/>
+  <line x1="600" y1="252" x2="615" y2="275" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="660" cy="240" rx="28" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="660" y="244" text-anchor="middle" font-size="11">客户名</text>
+  <line x1="655" y1="255" x2="645" y2="275" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="730" cy="265" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="730" y="269" text-anchor="middle" font-size="11">客户地址</text>
+  <line x1="705" y1="272" x2="680" y2="288" stroke="#333" stroke-width="1.2"/>
+
+  <!-- 客户多值属性：电话 -->
+  <ellipse cx="730" cy="310" rx="32" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.8"/>
+  <ellipse cx="730" cy="310" rx="38" ry="19" fill="none" stroke="#7C3AED" stroke-width="1.2"/>
+  <text x="730" y="314" text-anchor="middle" font-size="11">联系电话</text>
+  <line x1="700" y1="305" x2="680" y2="300" stroke="#333" stroke-width="1.2"/>
+
+  <!-- ==================== 实体：销售记录（右下） ==================== -->
+  <rect x="600" y="380" width="120" height="50" rx="0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="660" y="410" text-anchor="middle" font-weight="bold" font-size="15">销售记录</text>
+
+  <ellipse cx="530" cy="380" rx="42" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.8"/>
+  <text x="530" y="384" text-anchor="middle" font-size="11">销售记录号</text>
+  <line x1="530" y1="368" x2="545" y2="366" stroke="#7C3AED" stroke-width="1.3"/>
+  <line x1="565" y1="388" x2="600" y2="398" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="530" cy="430" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="530" y="434" text-anchor="middle" font-size="11">销售数量</text>
+  <line x1="558" y1="425" x2="600" y2="408" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="770" cy="370" rx="32" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="770" y="374" text-anchor="middle" font-size="11">销售日期</text>
+  <line x1="748" y1="378" x2="720" y2="390" stroke="#333" stroke-width="1.2"/>
+
+  <ellipse cx="770" cy="420" rx="36" ry="15" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="770" y="424" text-anchor="middle" font-size="11">销售价格</text>
+  <line x1="742" y1="418" x2="722" y2="412" stroke="#333" stroke-width="1.2"/>
+
+  <!-- ==================== 联系5：客户-销售记录 (1:N) ==================== -->
+  <polygon points="530,330 570,348 530,366 490,348" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+  <text x="530" y="353" text-anchor="middle" font-size="11">产生</text>
+
+  <line x1="600" y1="330" x2="565" y2="345" stroke="#333" stroke-width="1.5"/>
+  <text x="585" y="332" font-size="11" font-weight="bold" fill="#DC2626">1</text>
+
+  <line x1="602" y1="400" x2="565" y2="358" stroke="#333" stroke-width="1.5"/>
+  <text x="595" y="382" font-size="11" font-weight="bold" fill="#DC2626">N</text>
+
+  <!-- 销售记录引出的外键连线：药品、批次 -->
+  <!-- 药品 → 销售记录 (1:N) -->
+  <text x="420" y="415" font-size="11" font-weight="bold" fill="#DC2626">(F)</text>
+  <line x1="370" y1="110" x2="420" y2="410" stroke="#888" stroke-width="1" stroke-dasharray="6,3"/>
+
+  <!-- ==================== 图例与标注 ==================== -->
+  <rect x="30" y="520" width="1040" height="350" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+
+  <text x="50" y="550" font-weight="bold" font-size="15" fill="#1E293B">图例 · 陈氏 ER 图符号</text>
+
+  <rect x="50" y="568" width="55" height="25" rx="0" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="120" y="586" font-size="12" fill="#334155">实体 — 矩形</text>
+
+  <ellipse cx="75" cy="615" rx="26" ry="12" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="120" y="620" font-size="12" fill="#334155">属性 — 椭圆（下划线 = 主码）</text>
+
+  <ellipse cx="230" cy="585" rx="26" ry="12" fill="#F3E8FF" stroke="#7C3AED" stroke-width="1.5"/>
+  <ellipse cx="230" cy="585" rx="32" ry="16" fill="none" stroke="#7C3AED" stroke-width="1.2"/>
+  <text x="280" y="590" font-size="12" fill="#334155">多值属性 — 双椭圆</text>
+
+  <polygon points="240,607 258,615 240,623 222,615" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="280" y="620" font-size="12" fill="#334155">联系 — 菱形</text>
+
+  <text x="50" y="660" font-weight="bold" font-size="14" fill="#DC2626">本题难点</text>
+
+  <text x="50" y="685" font-size="13" fill="#334155">1. 入库 是三元联系（药品-批次-库位），三个实体共同参与，菱形连接三条线</text>
+  <text x="50" y="710" font-size="13" fill="#334155">2. 批次 是独立实体而非药品属性——因为"同一药品具有多个批次"且批次有自己的编号/日期</text>
+  <text x="50" y="735" font-size="13" fill="#334155">3. 供应 是 M:N 联系且自带属性（供货价格、供货日期），需独立成表</text>
+  <text x="50" y="760" font-size="13" fill="#334155">4. 销售记录 与客户/药品/批次都有外键关联，ER图中通过连线体现</text>
+
+  <text x="50" y="800" font-weight="bold" font-size="14" fill="#1E293B">关系模式（10张表）</text>
+
+  <text x="50" y="825" font-size="12" fill="#334155">供货商(供货商号, 名称, 联系人, 联系电话)</text>
+  <text x="50" y="845" font-size="12" fill="#334155">药品(商品号, 名称, 单价, 类别, 单位)</text>
+  <text x="400" y="825" font-size="12" fill="#334155">批次(批次号, 商品号, 生产日期, 有效期)  FK: 商品号→药品</text>
+  <text x="400" y="845" font-size="12" fill="#334155">销售网点(网点号, 网点名称, 地址)</text>
+  <text x="750" y="825" font-size="12" fill="#334155">库位(库位号, 网点号, 库位类型)  FK: 网点号→销售网点</text>
+  <text x="750" y="845" font-size="12" fill="#334155">客户(客户号, 客户名, 客户地址)</text>
+  <text x="50" y="865" font-size="12" fill="#334155">联系电话(客户号, 电话)  FK: 客户号→客户</text>
+  <text x="400" y="865" font-size="12" fill="#334155">供应(供货商号, 商品号, 供货价格, 供货日期)  FK: 供货商号→供货商, 商品号→药品</text>
+  <text x="50" y="885" font-size="12" fill="#334155">入库(商品号, 批次号, 库位号, 入库数量, 入库日期)  FK: 商品号→药品, 批次号→批次, 库位号→库位</text>
+  <text x="50" y="905" font-size="12" fill="#334155">销售记录(销售记录号, 客户号, 商品号, 批次号, 销售数量, 销售日期, 销售价格)  FK: 客户号→客户, 商品号→药品, 批次号→批次</text>
+</svg>
