@@ -82,5 +82,93 @@ WHERE (sal BETWEEN 4000 AND 9000) AND deptno IN (
     SELECT deptno FROM dept WHERE dname = 'CS'
 ) AND ename LIKE '张%';
 
+USE 2021_sql;
+
+DROP TABLE IF EXISTS SC;
+DROP TABLE IF EXISTS Student;
+DROP TABLE IF EXISTS Course;
+
+CREATE TABLE Student (
+    Sno VARCHAR(10) NOT NULL PRIMARY KEY,
+    Sname VARCHAR(20) NOT NULL,
+    Sdept VARCHAR(20)
+);
 
 
+CREATE TABLE Course (
+    Cno VARCHAR(10) NOT NULL PRIMARY KEY,
+    Cname VARCHAR(20) NOT NULL
+);
+
+
+CREATE TABLE SC (
+    Sno VARCHAR(10) NOT NULL REFERENCES Student(Sno),
+    Cno VARCHAR(10) NOT NULL REFERENCES Course(Cno),
+    Grade INT CHECK (Grade BETWEEN 0 AND 100),
+    PRIMARY KEY (Sno, Cno)
+);
+
+CREATE VIEW TopStudent(Sno, avgGrade) AS
+SELECT Sno, AVG(Grade)
+FROM SC
+GROUP BY Sno
+HAVING AVG(Grade) >= 85;
+
+
+SELECT SC.Sno, Sname, Cname, Grade
+FROM SC
+JOIN Student ON Student.Sno = SC.Sno
+JOIN Course ON Course.Cno = SC.Cno
+WHERE Sdept = 'CS';
+
+SELECT Sno
+FROM SC
+JOIN Course ON Course.Cno = SC.Cno
+WHERE Cname = '数据库原理';
+
+SELECT Sno, Sname
+FROM Student
+WHERE Sno NOT IN (
+    SELECT Sno
+    FROM SC
+    JOIN Course ON Course.Cno = SC.Cno
+    WHERE Cname = '数据库原理'
+);
+
+
+SELECT Sno, COUNT(*) cnt
+FROM SC
+GROUP BY Sno
+HAVING COUNT(*) >= 3
+ORDER BY cnt DESC;
+
+INSERT INTO Student(Sno, Sname, Sdept) VALUES
+('2021001', '张三', 'CS');
+
+DROP TABLE IF EXISTS CS_Student;
+
+CREATE TABLE CS_Student(
+    Sno VARCHAR(10) NOT NULL PRIMARY KEY,
+    Sname VARCHAR(20) NOT NULL
+);
+
+
+INSERT INTO CS_Student(Sno, Sname)
+SELECT Sno, Sname
+FROM Student
+WHERE Sdept = 'CS';
+
+UPDATE SC 
+SET Grade = Grade + 5
+WHERE Sno IN (
+    SELECT Sno
+    FROM SC
+    JOIN Course ON Course.Cno = SC.Cno
+    WHERE Cname = '数据库原理'
+);
+
+
+SELECT Sno
+FROM SC
+JOIN Course ON Course.Cno = SC.Cno
+WHERE Cname = '数据库原理';
